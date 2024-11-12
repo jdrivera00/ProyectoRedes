@@ -1,0 +1,23 @@
+/* styles/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#postsContainer {
+    margin-top: 20px;
+}
+
+.post {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-right: 5px;
+}
