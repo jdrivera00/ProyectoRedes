@@ -1,5 +1,6 @@
 // js/app.js
-import { loadPosts, createPost, removePost, editPost } from "../controllers/postController.js";
+import { loadPosts, createPost, removePost, editPost } from "../Controllers/postController";
+
 
 window.addEventListener("load", () => {
     if (document.getElementById("postsContainer")) {

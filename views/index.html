@@ -1,16 +1,39 @@
-<!-- views/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Informativo</title>
+    <title>Blog de Protocolos de Redes</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <h1>Blog de Protocolos de Redes</h1>
     <div id="postsContainer"></div>
     <a href="postForm.html">Agregar Nuevo Post</a>
+
+    <!-- Scripts del controlador y Firebase -->
     <script type="module" src="../js/app.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAyIekq5Z-6OpZk07mr7WoBY7N66q7EFKQ",
+        authDomain: "proyectoredes-eb3cf.firebaseapp.com",
+        projectId: "proyectoredes-eb3cf",
+        storageBucket: "proyectoredes-eb3cf.firebasestorage.app",
+        messagingSenderId: "330783118613",
+        appId: "1:330783118613:web:65bbf9e437364435dd851c",
+        measurementId: "G-Q74BRW21M5"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 </body>
 </html>
